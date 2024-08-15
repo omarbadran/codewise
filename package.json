@@ -1,0 +1,35 @@
+{
+  "name": "codewise",
+  "version": "1.0.0",
+  "description": "A CLI tool to generate codebase context for LLMs",
+  "main": "dist/index.js",
+  "bin": {
+    "codewise": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "cli",
+    "codebase",
+    "context",
+    "llm"
+  ],
+  "author": "Omar Badran <engineer.o.badran@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/omarbadran/codewise.git"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "glob": "^11.0.0",
+    "ignore": "^5.3.2",
+    "winston": "^3.14.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.3.0",
+    "typescript": "^5.5.4"
+  }
+}
